@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#message{
+    text-align: center;
+    margin-top: 15%;
+    display: none;
+}
+
+#game-world {
+    width: 504px;
+    height: 204px;
+    border: 2px solid #000;
+    margin: 25% auto 0 auto;
+}
+
+#jumper {
+    width: 20px;
+    height: 50px;
+    background-color: #c72914;
+    position: relative;
+    top: 150px;
+    right: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-in-out;
+}
+
+#obstacle {
+    width: 20px;
+    height: 20px;
+    background-color: #1453c7;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: obstacleMove 2s infinite linear;
+}
+
+@keyframes obstacleMove {
+    0% {
+        left: 480px;
+    }
+
+    100% {
+        left: -40px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    70% {
+        top: 100px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}

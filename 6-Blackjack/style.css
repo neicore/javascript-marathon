@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.blackjack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#game-results-message{
+    margin: 20px 0;
+}
+
+.playground{
+    background-color: #088508;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.top{
+    width: auto;
+    min-height: 500px;
+    height: fit-content;
+    display: flex;
+    margin: 10px;
+    grid-gap: 10px;
+}
+
+.user, .dealer{
+    width: 550px;
+    min-height: 300px;
+    text-align: center;
+    border: 1px solid #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.user > h3, .dealer > h3{
+    font-size: 25px;
+}
+
+.cards-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    margin: 10px;
+    height: fit-content;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+.cards-div img{
+    height: 150px;
+}
+
+.buttom{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.buttom > button{
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: none;
+    font-weight: 600;
+}
+
+.score-board{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.score-board > div{
+    margin-right: 10px;
+    display: flex;
+}
+
+.score-board > div:last-child{
+    margin-right: 0;
+}
+
+.score-board > div > :first-child{
+    margin-right: 10px;
+}
+
+#wins, #losses, #draws{
+    font-weight: bold;
+}
+
+@media(max-width: 1120px){
+    .user, .dealer{
+        width: 400px;
+    }
+}
+
+@media(max-width: 900px){
+    .user, .dealer{
+        width: 300px;
+    }
+}
+
+@media(max-width: 570px){
+    .top{
+        flex-direction: column;
+    }
+
+    .user, .dealer{
+        width: auto;
+        height: 50%;
+    }
+}

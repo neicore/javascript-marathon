@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Change Button Colors</title>
+</head>
+
+<body>
+    <h1>Change Button Colors</h1>
+    <div id="flex">
+        <a href="#" class="IG" class="btn">Instagram</a>
+        <a href="#" class="twitter" class="btn">Twitter</a>
+        <a href="#" class="github" class="btn">Github</a>
+        <a href="#" class="youtube" class="btn">Youtube</a>
+    </div>
+
+    <form action="#">
+        <select name="choose-color" id="choose-color" onchange="changeColor(this)">
+            <option value="choose" selected disabled>Choose from these options</option>
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="grey">Grey</option>
+            <option value="blue">Blue</option>
+            <option value="purple">Purple</option>
+            <option value="reset">Reset</option>
+        </select>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

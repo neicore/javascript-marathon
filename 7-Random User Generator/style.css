@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.container > div > img{
+    border: 0 solid #fff;
+    border-radius: 50%;
+}
+
+.container > div > p{
+    background-color: #eee;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blackjack</title>
+</head>
+
+<body>
+
+    <div class="blackjack">
+        <h1>Blackjack</h1>
+        <h2 id="game-results-message">Let's Play</h2>
+
+        <div class="playground">
+            <div class="top">
+                <div class="user">
+                    <h3>You: <span id="user-score">0</span></h3>
+                    <div class="cards-div" id="user-cards-div">
+                        
+                    </div>
+                </div>
+
+                <div class="dealer">
+                    <h3>Dealer: <span id="dealer-score">0</span></h3>
+                    <div class="cards-div" id="dealer-cards-div">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttom">
+                <button id="hit">Hit</button>
+                <button id="stand">Stand</button>
+                <button id="deal">Deal</button>
+            </div>
+        </div>
+
+        <div class="score-board">
+            <div class="wins">
+                <p>Wins: </p>
+                <p id="wins">0</p>
+            </div>
+
+            <div class="losses">
+                <p>Losses: </p>
+                <p id="losses">0</p>
+            </div>
+
+            <div class="draws">
+                <p>Draws: </p>
+                <p id="draws">0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
